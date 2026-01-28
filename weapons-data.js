@@ -6,7 +6,7 @@ const weaponClasses = [
             { id: 'm4a1', name: 'M4A1' },
             { id: 'ak47', name: 'AK47' },
             { id: 'scar', name: 'SCAR' },
-            { id: 'Groza', name: 'GROZA' },
+            { id: 'groza', name: 'GROZA' },
             { id: 'famas', name: 'FAMAS' },
             { id: 'xm8', name: 'XM8' },
             { id: 'an94', name: 'AN94' },
@@ -42,76 +42,116 @@ const weaponClasses = [
     },
 
         {
-        id:'machine-gun',
-        name:'Machine Gun',
+        id:'sub-machine gun',
+        name:'Sub-Machine Gun',
         weapons: [
-            { id: 'm249', name: 'M249' },
-            { id: 'm60', name: 'M60' },
-            { id: 'kord', name: 'KORD' }
+            { id: 'ump', name: 'UMP' },
+            { id: 'mp5', name: 'MP5' },
+            { id: 'vss', name: 'VSS' },
+            { id: 'mp40', name: 'MP40' },
+            { id: 'p90', name: 'P90' },
+            { id: 'cg15', name: 'CG15' },
+            { id: 'thompson', name: 'THOMPSON' },
+            { id: 'vector', name: 'VECTOR' },
+            { id: 'mac10', name: 'MAC10' },
+            { id: 'bizon', name: 'BIZON' }
         ],
     },
 
         {
-        id:'machine-gun',
-        name:'Machine Gun',
+        id:'shotgun',
+        name:'SHOTGUN',
         weapons: [
-            { id: 'm249', name: 'M249' },
-            { id: 'm60', name: 'M60' },
-            { id: 'kord', name: 'KORD' }
+            { id: 'm1014', name: 'M1014' },
+            { id: 'spas12', name: 'SPAS12' },
+            { id: 'm1887', name: 'M1887' },
+            { id: 'mag-7', name: 'MAG-7' },
+            { id: 'charge-buster', name: 'CHARGE BUSTER' },
+            { id: 'trogon', name: 'TROGON' },
+            { id: 'm1917', name: 'M1917' }
         ],
     },
 
         {
-        id:'machine-gun',
-        name:'Machine Gun',
+        id:'sniper',
+        name:'SNIPER',
         weapons: [
-            { id: 'm249', name: 'M249' },
-            { id: 'm60', name: 'M60' },
-            { id: 'kord', name: 'KORD' }
+            { id: 'awm', name: 'AWM' },
+            { id: 'kar98k', name: 'KAR98K' },
+            { id: 'm82b', name: 'M82B' },
+            { id: 'm24', name: 'M24' },
+            { id: 'heal sniper', name: 'HEAL SNIPER' },
+            { id: 'vsk94', name: 'VSK94' }
         ],
     },
 
         {
-        id:'machine-gun',
-        name:'Machine Gun',
+        id:'pistol',
+        name:'PISTOL',
         weapons: [
-            { id: 'm249', name: 'M249' },
-            { id: 'm60', name: 'M60' },
-            { id: 'kord', name: 'KORD' }
+            { id: 'usp', name: 'USP' },
+            { id: 'desert eagle', name: 'DESERT EAGLE' },
+            { id: 'g18', name: 'G18' },
+            { id: 'm1873', name: 'M1873' },
+            { id: 'm500', name: 'M500' },
+            { id: 'm1917', name: 'M1917' },
+            { id: 'usp-2', name: 'USP-2' },
+            { id: 'mini-uzi', name: 'MINI UZI' },
+            { id: 'heal-pistol', name: 'HEAL PISTOL' },
+            { id: 'hand-cannon', name: 'HAND CANNON' },
+            { id: 'ice-gun', name: 'ICE GUN' }
         ],
     },
 
         {
-        id:'machine-gun',
-        name:'Machine Gun',
+        id:'melee',
+        name:'MELEE',
         weapons: [
-            { id: 'm249', name: 'M249' },
-            { id: 'm60', name: 'M60' },
-            { id: 'kord', name: 'KORD' }
+            { id: 'pan', name: 'PAN' },
+            { id: 'parang', name: 'PARANG' },
+            { id: 'bat', name: 'BAT' },
+            { id: 'katana', name: 'KATANA' },
+            { id: 'scythe', name: 'SCYTHE' },
+            { id: 'ff knife', name: 'FF KNIFE' }
         ],
     },
 
         {
-        id:'machine-gun',
-        name:'Machine Gun',
+        id:'fist',
+        name:'FIST',
         weapons: [
-            { id: 'm249', name: 'M249' },
-            { id: 'm60', name: 'M60' },
-            { id: 'kord', name: 'KORD' }
+            { id: 'fist', name: 'FIST' }
         ],
     },
 
         {
-        id:'machine-gun',
-        name:'Machine Gun',
+        id:'grenade',
+        name:'GRENADE',
         weapons: [
-            { id: 'm249', name: 'M249' },
-            { id: 'm60', name: 'M60' },
-            { id: 'kord', name: 'KORD' }
+            { id: 'grenade', name: 'GRENADE' },
+            { id: 'smoke-grenade', name: 'SMOKE GRENADE' },
+            { id: 'gloo wall', name: 'GLOO WALL' }
         ],
+    },
+        {
+        id:'others',
+        name:'OTHERS',
+        weapons: [
+            { id: 'crossbow', name: 'CROSSBOW' },
+            { id: 'm79', name: 'M79' },
+            { id: 'mgl140', name: 'MGL140' },
+            { id: 'rgs-50', name: 'RGS-50' },
+            { id: 'gatling', name: 'GATLING' },
+            { id: 'fgl-24', name: 'FGL-24' },
+        ]
     },
 
 ];
+
+const weaponImages = {
+    m4a1:'./images/m4a1.png',
+    ak47:'ak47.png',
+};
 
 function getWeaponSkins(weaponId) {
     const skinNames = ['Dragon Fury', 'Neon Strike', 'Blood Moon', 'Golden Legacy'];
@@ -125,4 +165,8 @@ function getWeaponSkins(weaponId) {
         name: name,
         image: skinImages[index] || skinImages[0]
     }));
+}
+
+function getWeaponImage(weaponId) {
+    return weaponImages[weaponId] ||weaponImages.ak47;
 }

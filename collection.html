@@ -96,38 +96,115 @@
     </div>
 </header>
 
-<!-- Page Layout -->
-<div class="weapons-layout">
-    <aside class="weapon-sidebar" id="weaponSidebar">
-        <div class="sidebar-header">
-            <h2>Weapons</h2>
-            <p>Browse by class</p>
-        </div>
-        <nav class="sidebar-nav" id="sidebarNav"></nav>
+  <!-- Main Bundles Content -->
+  <main class="bundles-main">
+    <!-- Main Categories (Left) -->
+    <aside class="bundles-categories">
+      <div class="categories-list" id="categoriesList">
+        <!-- Dynamically populated -->
+      </div>
+      <button class="categories-expand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6,9 12,15 18,9"></polyline>
+        </svg>
+      </button>
     </aside>
 
-    <main class="weapon-content" id="weaponContent"></main>
-</div>
+    <!-- Sub-Categories (Images Only) -->
+    <aside class="bundles-subcategories">
+      <div class="subcategories-list" id="subcategoriesList">
+        <!-- Dynamically populated -->
+      </div>
+    </aside>
 
-<script src="js/weapons-data.js"></script>
-<script src="js/weapons.js"></script>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <script src="js/test.js"></script>
-    <script src="js/ct.js"></script>
+    <!-- Content Area (Grid) -->
+    <section class="bundles-content">
+      <!-- Filter Bar -->
+      <div class="bundles-filter-bar">
+        <span class="filter-label">ALL RARITY</span>
+        <div class="filter-dropdown">
+          <span><a href="collection.html">All</a></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6,9 12,15 18,9"></polyline>
+          </svg>
+        </div>
+        <div class="filter-icons">
+          <button class="filter-icon-btn" title="Favorites">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </div>
 
+      <!-- 3-Column Grid -->
+      <div class="items-grid-container">
+        <div class="items-grid" id="itemsGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Preview (Right Side) -->
+    <aside class="bundles-preview">
+      <!-- Background Effects -->
+      <div class="preview-bg-glow"></div>
+      <div class="preview-bg-floor"></div>
+
+      <!-- Preview Container -->
+      <div class="preview-container">
+        <div class="preview-media">
+          <img id="previewImage" src="" alt="Preview">
+          <video id="previewVideo" src="" muted loop playsinline style="display: none;"></video>
+          <div class="preview-info" id="previewInfo" style="display: none;">
+            <div class="info-content">
+              <p class="info-description" id="infoDescription"></p>
+              <div class="info-details">
+                <span class="info-rarity" id="infoRarity"></span>
+                <span class="info-price" id="infoPrice"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item Label -->
+        <div class="preview-label">
+          <span class="item-icon" id="itemIcon"></span>
+          <span class="item-name" id="itemName">Select an item</span>
+          <span class="item-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- Preview Options (Right Side) -->
+      <div class="preview-options">
+        <button class="preview-option-btn" id="videoOption" title="Video Preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </button>
+        <button class="preview-option-btn" id="infoOption" title="Item Info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+        </button>
+        <button class="preview-option-btn" title="Try On">
+          <span class="option-count">20k</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="js/bundles-data.js"></script>
+  <script src="js/bundles.js"></script>
 </body>
 </html>

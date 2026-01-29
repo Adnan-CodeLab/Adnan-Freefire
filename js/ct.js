@@ -43,6 +43,4 @@ function animateCircles() {
 
 animateCircles();
 
-// ✅ DO NOT ADD CLICK SOUND HERE
-
 

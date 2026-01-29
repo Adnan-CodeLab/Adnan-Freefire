@@ -161,6 +161,14 @@ function renderWeaponGrid() {
             </div>
         </div>
     `;
+
+    document.getElementById('backToClasses').addEventListener('click', () => {
+    currentView = 'classes';
+    selectedClassId = null;
+    renderSidebar();
+    renderContent();
+});
+
 }
 
 // Render Weapon Detail

@@ -95,22 +95,43 @@
 
     </div>
 </header>
+<!-- main content-->
+<main class="characters-page">
+  <section class="characters-banner">
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&h=400&fit=crop" class="banner-image">
+    <div class="banner-overlay">
+      <h1 class="banner-title">PETS</h1>
+      <p class="banner-subtitle">Discover unique abilities and master your favorite fighters</p>
+    </div>
+  </section>
 
-<!-- Page Layout -->
-<div class="weapons-layout">
-    <aside class="weapon-sidebar" id="weaponSidebar">
-        <div class="sidebar-header">
-            <h2>Weapons</h2>
-            <p>Browse by class</p>
-        </div>
-        <nav class="sidebar-nav" id="sidebarNav"></nav>
-    </aside>
+  <section class="characters-search-section">
+    <div class="search-wrapper">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="characterSearch" placeholder="Search characters by name..." class="character-search-input">
+    </div>
+  </section>
 
-    <main class="weapon-content" id="weaponContent"></main>
-</div>
+  <section class="characters-grid-section">
+    <div class="characters-grid" id="charactersGrid">
+    </div>
+  <div class="no-results" id="noResults" style="display: none;">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="8" y1="12" x2="16" y2="12"></line>
+    </svg>
+    <p>No Characters found matching your search.</p>
+  </div>
+  </section>
+</main>
 
-<script src="js/weapons-data.js"></script>
-<script src="js/weapons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pets-data.js"></script>
+<script src="js/pets.js"></script>
+<div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
@@ -125,9 +146,7 @@
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
-    <div class="circle"></div>
-    <script src="js/test.js"></script>
-    <script src="js/ct.js"></script>
-
+<script src="js/test.js"></script>
+<script src="js/ct.js"></script>
 </body>
 </html>
